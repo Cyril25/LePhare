@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Phare - Accueil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-2xl font-bold">Le Phare</h1>
+            <nav class="mt-4 md:mt-0">
+                <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4">
+                    <li><a href="index.html" class="text-blue-500 hover:underline">Accueil</a></li>
+                    <li><a href="menu-snack.html" class="hover:underline">Menu Snack</a></li>
+                    <li><a href="menu-restaurant.html" class="hover:underline">Menu Restaurant</a></li>
+                    <li><a href="menu-boissons.html" class="hover:underline">Menu Boissons</a></li>
+                    <li><a href="infos-pratiques.html" class="hover:underline">Infos Pratiques</a></li>
+                    <li><a href="blog.html" class="hover:underline">Blog</a></li>
+                    <li><a href="contact.html" class="hover:underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container mx-auto px-4 py-8">
+        <section class="text-center">
+            <h2 class="text-4xl font-bold mb-4">Bienvenue au Phare</h2>
+            <p class="text-lg">Un lieu unique en bord de lac, parfait pour se détendre entre amis, profiter d'une vue magnifique et savourer des spécialités locales.</p>
+        </section>
+        <section class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+                <img src="assets/terrasse-ete.jpg" alt="Terrasse en été" class="rounded-lg shadow w-full" style="width: 600px; height: 400px; object-fit: cover;">
+                <h3 class="text-2xl font-bold mt-4">Terrasse en été</h3>
+                <p>Profitez de notre terrasse ensoleillée avec une vue imprenable sur le lac de Malbuisson. Installez-vous confortablement et laissez-vous séduire par l'ambiance estivale, idéale pour partager un moment convivial autour de nos planchettes de charcuterie et de fromage locaux.</p>
+            </div>
+            <div>
+                <img src="assets/ambiance-hiver.jpg" alt="Ambiance cosy en hiver" class="rounded-lg shadow w-full" style="width: 600px; height: 400px; object-fit: cover;">
+                <h3 class="text-2xl font-bold mt-4">Ambiance cosy en hiver</h3>
+                <p>Quand les températures baissent, retrouvez-vous dans notre intérieur chaleureux. Dégustez une fondue au Comté ou une raclette traditionnelle, accompagnées d'un verre de Savagnin local ou d'un vin rouge léger, tout en admirant le paysage enneigé autour du lac.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Le Phare. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
