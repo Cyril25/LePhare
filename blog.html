@@ -8,42 +8,40 @@
 </head>
 <body class="bg-gray-100 text-gray-800">
     <header class="bg-white shadow">
-        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
-            <h1 class="text-2xl font-bold">Le Phare</h1>
-            <nav>
-                <ul class="flex space-x-4">
+        <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-2xl font-bold text-center md:text-left">Le Phare</h1>
+            <nav class="mt-4 md:mt-0">
+                <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 text-center">
                     <li><a href="index.html" class="hover:underline">Accueil</a></li>
                     <li><a href="menu-snack.html" class="hover:underline">Menu Snack</a></li>
                     <li><a href="menu-restaurant.html" class="hover:underline">Menu Restaurant</a></li>
+                    <li><a href="menu-boissons.html" class="hover:underline">Menu Boissons</a></li>
                     <li><a href="infos-pratiques.html" class="hover:underline">Infos Pratiques</a></li>
-                    <li><a href="blog.html" class="text-blue-500 hover:underline">Blog</a></li>
+                    <li><a href="blog.html" class="hover:underline">Blog</a></li>
                     <li><a href="contact.html" class="hover:underline">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main class="container mx-auto px-4 py-8">
-        <h2 class="text-4xl font-bold mb-4 text-center">Blog & Actualités</h2>
-        <section class="space-y-6">
-            <article class="bg-white p-6 rounded-lg shadow">
-                <h3 class="text-2xl font-bold">Soirée Cocktails et DJ</h3>
-                <p class="text-gray-700">Rejoignez-nous chaque vendredi soir pour une ambiance festive avec un DJ en live et des cocktails exclusifs à base de produits locaux. Une soirée parfaite pour se détendre entre amis !</p>
+        <section class="text-center">
+            <h2 class="text-4xl font-bold mb-4">Blog</h2>
+            <p class="text-lg">Découvrez nos dernières actualités, recettes et événements.</p>
+        </section>
+        <section class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <article class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="assets/ambiance-hiver.jpg" alt="Ambiance hiver" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold mb-2">Ambiance Hivernale</h3>
+                    <p class="text-gray-700">Découvrez notre terrasse en hiver, un cadre magique pour vos repas.</p>
+                </div>
             </article>
-            <article class="bg-white p-6 rounded-lg shadow">
-                <h3 class="text-2xl font-bold">Brunch du Dimanche</h3>
-                <p class="text-gray-700">Tous les dimanches, profitez de notre brunch avec une vue imprenable sur le lac. Au menu : viennoiseries, jus frais, fromages locaux, et bien plus encore !</p>
-            </article>
-            <article class="bg-white p-6 rounded-lg shadow">
-                <h3 class="text-2xl font-bold">Atelier Dégustation de Vins</h3>
-                <p class="text-gray-700">Découvrez les secrets des vins de la région lors de nos ateliers de dégustation. Une expérience conviviale et enrichissante pour les amateurs de bons crus.</p>
-            </article>
-            <article class="bg-white p-6 rounded-lg shadow">
-                <h3 class="text-2xl font-bold">Soirée Raclette à Volonté</h3>
-                <p class="text-gray-700">Venez vous réchauffer avec notre soirée raclette à volonté, accompagnée de charcuteries et de vins locaux. Une ambiance chaleureuse garantie !</p>
-            </article>
-            <article class="bg-white p-6 rounded-lg shadow">
-                <h3 class="text-2xl font-bold">Découverte du Lac Saint-Point</h3>
-                <p class="text-gray-700">Explorez les merveilles du lac Saint-Point, un joyau naturel de la région. Profitez de nos conseils pour des balades inoubliables et des activités en plein air.</p>
+            <article class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="assets/burger.jpg" alt="Burger maison" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold mb-2">Nos Burgers Maison</h3>
+                    <p class="text-gray-700">Savourez nos burgers faits maison avec des ingrédients locaux.</p>
+                </div>
             </article>
         </section>
     </main>

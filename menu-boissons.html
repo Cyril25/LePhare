@@ -8,14 +8,14 @@
 </head>
 <body class="bg-gray-100 text-gray-800">
     <header class="bg-white shadow">
-        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
-            <h1 class="text-2xl font-bold">Le Phare</h1>
-            <nav>
-                <ul class="flex space-x-4">
+        <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-2xl font-bold text-center md:text-left">Le Phare</h1>
+            <nav class="mt-4 md:mt-0">
+                <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 text-center">
                     <li><a href="index.html" class="hover:underline">Accueil</a></li>
                     <li><a href="menu-snack.html" class="hover:underline">Menu Snack</a></li>
                     <li><a href="menu-restaurant.html" class="hover:underline">Menu Restaurant</a></li>
-                    <li><a href="menu-boissons.html" class="text-blue-500 hover:underline">Menu Boissons</a></li>
+                    <li><a href="menu-boissons.html" class="hover:underline">Menu Boissons</a></li>
                     <li><a href="infos-pratiques.html" class="hover:underline">Infos Pratiques</a></li>
                     <li><a href="blog.html" class="hover:underline">Blog</a></li>
                     <li><a href="contact.html" class="hover:underline">Contact</a></li>
@@ -24,62 +24,18 @@
         </div>
     </header>
     <main class="container mx-auto px-4 py-8">
-        <h2 class="text-4xl font-bold mb-4 text-center">Menu Boissons</h2>
-        <section class="space-y-8">
-            <div class="bg-white p-6 rounded-lg shadow">
-                <h3 class="text-2xl font-bold mb-4">Cocktails Locaux</h3>
-                <ul class="list-disc pl-6 space-y-2">
-                    <li><strong>Pontarlier Mule</strong> : Une revisite du Moscow Mule avec de l'absinthe de Pontarlier, du gingembre et du citron vert.</li>
-                    <li><strong>Macvin Spritz</strong> : Un cocktail pétillant à base de Macvin du Jura, d'eau gazeuse et d'une touche d'orange.</li>
-                    <li><strong>Doubs Sunrise</strong> : Une création fruitée avec du jus de pomme local, du sirop de grenadine et une touche de rhum.</li>
-                    <li><strong>Franche-Comté Sour</strong> : Un mélange audacieux de Savagnin, de citron et de sirop de miel.</li>
-                    <li><strong>Jura Tonic</strong> : Un gin tonic revisité avec un gin artisanal du Jura et une touche de romarin.</li>
-                </ul>
+        <section class="text-center">
+            <h2 class="text-4xl font-bold mb-4">Menu Boissons</h2>
+            <p class="text-lg">Découvrez notre sélection de boissons rafraîchissantes et savoureuses.</p>
+        </section>
+        <section class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <h3 class="text-2xl font-bold mb-4">Cocktails</h3>
+                <p class="text-gray-700">Profitez de nos cocktails maison, parfaits pour accompagner vos repas.</p>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow">
-                <h3 class="text-2xl font-bold mb-4">Cocktails Classiques</h3>
-                <ul class="list-disc pl-6 space-y-2">
-                    <li><strong>Mojito</strong> : Un classique rafraîchissant à base de menthe, citron vert, sucre, rhum et eau gazeuse.</li>
-                    <li><strong>Piña Colada</strong> : Un mélange tropical de rhum, ananas et lait de coco.</li>
-                    <li><strong>Cosmopolitan</strong> : Une combinaison élégante de vodka, triple sec, jus de cranberry et citron vert.</li>
-                    <li><strong>Tequila Sunrise</strong> : Une explosion de saveurs avec tequila, jus d'orange et grenadine.</li>
-                </ul>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow">
-                <h3 class="text-2xl font-bold mb-4">Boissons Sans Alcool</h3>
-                <ul class="list-disc pl-6 space-y-2">
-                    <li><strong>Jus de pomme artisanal</strong> : Pressé à froid pour une saveur authentique.</li>
-                    <li><strong>Thé glacé maison</strong> : Infusé avec des herbes fraîches et légèrement sucré.</li>
-                    <li><strong>Limonade artisanale</strong> : Préparée avec des citrons frais et une touche de miel.</li>
-                    <li><strong>Cocktail sans alcool</strong> : Mélange de jus de fruits frais et d'eau gazeuse.</li>
-                </ul>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow">
-                <h3 class="text-2xl font-bold mb-4">Vins Blancs</h3>
-                <ul class="list-disc pl-6 space-y-2">
-                    <li><strong>Chardonnay du Jura (AOC Côtes du Jura) – 12 % vol.</strong> : Arômes de pomme verte et de fleurs blanches. <em>Accord</em> : filet de truite grillée ou planchettes de fromage (Comté).</li>
-                    <li><strong>Arbois Blanc (assemblage Chardonnay & Savagnin) – 12,5 % vol.</strong> : Bouche fraîche et fruitée, équilibre entre rondeur et acidité. <em>Accord</em> : salade “Chez Nous” (lardons, œuf poché, copeaux de Comté) ou brochettes de poulet marinées.</li>
-                    <li><strong>Savagnin (AOC Côtes du Jura) – 13 % vol.</strong> : Goût marqué de noix et subtilement épicé. <em>Accord</em> : fondue au Comté ou raclette traditionnelle.</li>
-                    <li><strong>Vin Jaune (AOC Côtes du Jura) – 14 % vol.</strong> : Saveurs de noix, curry et épices douces. <em>Accord</em> : potée comtoise ou tartiflette franc-comtoise.</li>
-                    <li><strong>Macvin du Jura – 17 % vol.</strong> : Notes de miel et de coing, douceur onctueuse. <em>Accord</em> : apéritif gourmand ou planchettes de charcuterie.</li>
-                </ul>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow">
-                <h3 class="text-2xl font-bold mb-4">Vins Rosés</h3>
-                <ul class="list-disc pl-6 space-y-2">
-                    <li><strong>Rosé de Provence (IGP Méditerranée) – 12 % vol.</strong> : Arômes de fraise et d’agrumes. <em>Accord</em> : salade Fraîcheur d’Été ou brochettes de poulet.</li>
-                    <li><strong>Rosé de Saille (Pinot Noir du Jura) – 12 % vol.</strong> : Notes de framboise et de melon. <em>Accord</em> : quiche aux légumes d’été ou galette franc-comtoise.</li>
-                    <li><strong>Tavel (AOC Vallée du Rhône) – 13,5 % vol.</strong> : Corps plein et épices légères. <em>Accord</em> : burgers (classique ou Franc-Comtois) et viandes grillées.</li>
-                </ul>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow">
-                <h3 class="text-2xl font-bold mb-4">Vins Rouges</h3>
-                <ul class="list-disc pl-6 space-y-2">
-                    <li><strong>Pinot Noir du Jura (AOC Arbois ou Côtes du Jura) – 12,5 % vol.</strong> : Tanins fins, arômes de petits fruits rouges. <em>Accord</em> : magret de canard fumé (salade Gourmande) ou saucisse de Morteau grillée.</li>
-                    <li><strong>Côtes du Rhône (AOC) – 13,5 % vol.</strong> : Riche en fruits noirs et épices, tanins souples. <em>Accord</em> : plats mijotés (daube) et grillades au barbecue.</li>
-                    <li><strong>Bordeaux Rouge (AOC Médoc ou Saint-Émilion) – 13,5 % vol.</strong> : Notes de cassis, tabac et vanille. <em>Accord</em> : viandes rouges (entrecôte, faux-filet) ou charcuteries.</li>
-                    <li><strong>Beaujolais Villages (cépage Gamay) – 12 % vol.</strong> : Bouquet de cerise et groseille, léger et fruité. <em>Accord</em> : planchettes de charcuterie et de fromage ou plats végétariens.</li>
-                </ul>
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <h3 class="text-2xl font-bold mb-4">Vins</h3>
+                <p class="text-gray-700">Une sélection de vins locaux et internationaux pour tous les goûts.</p>
             </div>
         </section>
     </main>
