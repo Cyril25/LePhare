@@ -8,13 +8,13 @@
 </head>
 <body class="bg-gray-100 text-gray-800">
     <header class="bg-white shadow">
-        <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
-            <h1 class="text-2xl font-bold text-center md:text-left">Le Phare</h1>
-            <nav class="mt-4 md:mt-0">
-                <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 text-center">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Le Phare</h1>
+            <nav>
+                <ul class="flex space-x-4">
                     <li><a href="index.html" class="hover:underline">Accueil</a></li>
                     <li><a href="menu-snack.html" class="hover:underline">Menu Snack</a></li>
-                    <li><a href="menu-restaurant.html" class="hover:underline">Menu Restaurant</a></li>
+                    <li><a href="menu-restaurant.html" class="text-blue-500 hover:underline">Menu Restaurant</a></li>
                     <li><a href="menu-boissons.html" class="hover:underline">Menu Boissons</a></li>
                     <li><a href="infos-pratiques.html" class="hover:underline">Infos Pratiques</a></li>
                     <li><a href="blog.html" class="hover:underline">Blog</a></li>
@@ -24,18 +24,61 @@
         </div>
     </header>
     <main class="container mx-auto px-4 py-8">
-        <section class="text-center">
-            <h2 class="text-4xl font-bold mb-4">Menu Restaurant</h2>
-            <p class="text-lg">Découvrez nos plats raffinés préparés avec des ingrédients frais et locaux.</p>
-        </section>
-        <section class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div class="bg-white shadow-md rounded-lg p-6">
-                <h3 class="text-2xl font-bold mb-4">Entrées</h3>
-                <p class="text-gray-700">Une sélection d'entrées pour éveiller vos papilles.</p>
+        <h2 class="text-4xl font-bold mb-4 text-center">Menu Restaurant</h2>
+        <section class="space-y-8">
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h3 class="text-2xl font-bold mb-4">Plats d’hiver (Disponibles toute l’année)</h3>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li><strong>Fondue au Comté</strong> : Comté affiné 24 mois, pain artisanal et charcuterie locale (saucisse de Morteau, jambon de Luxeuil).</li>
+                    <li><strong>Raclette du Haut-Doubs</strong> : Fromage à raclette fermier, pommes de terre grenaille, cornichons, oignons doux et assortiment de charcuteries régionales.</li>
+                    <li><strong>Potée comtoise</strong> : Légumes racines mijotés avec palette et saucisse de Morteau, servis dans leur bouillon parfumé.</li>
+                    <li><strong>Saucisse de Morteau grillée</strong> : Accompagnée de lentilles vertes du Jura et d’un trait de moutarde à l’ancienne.</li>
+                    <li><strong>Tartiflette franc-comtoise</strong> : Pommes de terre, oignons, lardons fumés et Comté fondant (variation locale de la tartiflette).</li>
+                </ul>
             </div>
-            <div class="bg-white shadow-md rounded-lg p-6">
-                <h3 class="text-2xl font-bold mb-4">Plats Principaux</h3>
-                <p class="text-gray-700">Des plats savoureux pour satisfaire toutes vos envies.</p>
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h3 class="text-2xl font-bold mb-4">Plats d’été & Idées “Légères”</h3>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li><strong>Filet de truite du Doubs grillé</strong> : Sauce citronnée à l’huile de noix, légumes croquants de saison.</li>
+                    <li><strong>Salade “Chez Nous”</strong> : Mesclun, tomates cerises, lardons, œufs mollets, croûtons à l’ail et copeaux de Comté.</li>
+                    <li><strong>Brochettes de poulet fermier</strong> : Marinade aux herbes de montagne, riz parfumé et sauce yaourt-ciboulette.</li>
+                    <li><strong>Galette franc-comtoise</strong> : Galette de sarrasin garnie de légumes grillés et d’une fondue de Cancoillotte.</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h3 class="text-2xl font-bold mb-4">Options Végétariennes & Sans Fromage</h3>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li><strong>Risotto aux champignons des forêts</strong> : Crémeux, parfumé au vin blanc du Jura.</li>
+                    <li><strong>Salade de légumes rôtis</strong> : Poivrons, courgettes, aubergines, quinoa et vinaigrette citronnée.</li>
+                    <li><strong>Oeuf poché à la Cancoillotte</strong> : Sur lit de pommes de terre vapeur et salade verte.</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h3 class="text-2xl font-bold mb-4">Menus Enfants</h3>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li><strong>Nuggets de poulet maison</strong> : Frites croustillantes et ketchup.</li>
+                    <li><strong>Pâtes au beurre et Comté râpé</strong> : Version locale d’un grand classique.</li>
+                    <li><strong>Mini-burger du Phare</strong> : Steak haché, Comté, salade, pain artisanal.</li>
+                    <li><strong>Crêpe salée</strong> : Jambon de pays et Comté fondant.</li>
+                </ul>
+            </div>
+        </section>
+        <section class="mt-8 bg-gray-50 p-6 rounded-lg shadow">
+            <h4 class="text-xl font-bold text-center">Nos Fournisseurs Locaux</h4>
+            <p class="text-center text-gray-600">à Malbuisson et Labergement-Ste-Marie</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center mt-4">
+                <div>
+                    <h5 class="text-lg font-semibold">Viande et Charcuterie</h5>
+                    <p>Boucherie Grésard / Paillard</p>
+                </div>
+                <div>
+                    <h5 class="text-lg font-semibold">Fromages</h5>
+                    <p>Fromagerie Michelin, Fruitière des Lacs</p>
+                </div>
+                <div>
+                    <h5 class="text-lg font-semibold">Boulangerie</h5>
+                    <p>Boulangerie chez Baverel</p>
+                </div>
             </div>
         </section>
     </main>

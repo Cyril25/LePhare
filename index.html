@@ -9,10 +9,10 @@
 <body class="bg-gray-100 text-gray-800">
     <header class="bg-white shadow">
         <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
-            <h1 class="text-2xl font-bold text-center md:text-left">Le Phare</h1>
+            <h1 class="text-2xl font-bold">Le Phare</h1>
             <nav class="mt-4 md:mt-0">
-                <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 text-center">
-                    <li><a href="index.html" class="hover:underline">Accueil</a></li>
+                <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4">
+                    <li><a href="index.html" class="text-blue-500 hover:underline">Accueil</a></li>
                     <li><a href="menu-snack.html" class="hover:underline">Menu Snack</a></li>
                     <li><a href="menu-restaurant.html" class="hover:underline">Menu Restaurant</a></li>
                     <li><a href="menu-boissons.html" class="hover:underline">Menu Boissons</a></li>
@@ -26,15 +26,35 @@
     <main class="container mx-auto px-4 py-8">
         <section class="text-center">
             <h2 class="text-4xl font-bold mb-4">Bienvenue au Phare</h2>
-            <p class="text-lg">Découvrez notre restaurant avec une vue imprenable et une ambiance chaleureuse.</p>
+            <p class="text-lg">Un lieu unique en bord de lac, parfait pour se détendre entre amis, profiter d'une vue magnifique et savourer des spécialités locales.</p>
+        </section>
+        <section class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+                <img src="assets/terrasse-ete.jpg" alt="Terrasse en été" class="rounded-lg shadow w-full" style="width: 600px; height: 400px; object-fit: cover;">
+                <h3 class="text-2xl font-bold mt-4">Terrasse en été</h3>
+                <p>Profitez de notre terrasse ensoleillée avec une vue imprenable sur le lac de Malbuisson. Installez-vous confortablement et laissez-vous séduire par l'ambiance estivale, idéale pour partager un moment convivial autour de nos planchettes de charcuterie et de fromage locaux.</p>
+            </div>
+            <div>
+                <img src="assets/ambiance-hiver.jpg" alt="Ambiance cosy en hiver" class="rounded-lg shadow w-full" style="width: 600px; height: 400px; object-fit: cover;">
+                <h3 class="text-2xl font-bold mt-4">Ambiance cosy en hiver</h3>
+                <p>Quand les températures baissent, retrouvez-vous dans notre intérieur chaleureux. Dégustez une fondue au Comté ou une raclette traditionnelle, accompagnées d'un verre de Savagnin local ou d'un vin rouge léger, tout en admirant le paysage enneigé autour du lac.</p>
+            </div>
+        </section>
+        <section class="text-center mt-12">
+            <h2 class="text-4xl font-bold mb-4">Vue Panoramique</h2>
+            <p class="text-lg">Découvrez la beauté de notre terrasse avec une vue imprenable sur le lac Saint-Point. Un cadre idéal pour se détendre et profiter de la nature.</p>
         </section>
         <section class="mt-8">
             <div class="relative">
-                <img src="assets/terrasse-ete.jpg" alt="Terrasse en été" class="rounded-lg shadow-lg w-full max-h-96 object-cover">
+                <img src="assets/terrasse.jpg" alt="Vue panoramique de la terrasse" class="rounded-lg shadow-lg w-full" style="max-height: 600px; object-fit: cover;">
                 <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-                    <h3 class="text-white text-3xl font-bold text-center px-4">Un lieu unique pour vos moments spéciaux</h3>
+                    <h3 class="text-white text-3xl font-bold">Un panorama à couper le souffle</h3>
                 </div>
             </div>
+        </section>
+        <section class="mt-8 text-center">
+            <h3 class="text-2xl font-bold">Un lieu unique</h3>
+            <p class="text-lg mt-4">Que ce soit pour un déjeuner ensoleillé ou un dîner romantique, notre terrasse vous offre une expérience inoubliable au cœur de la nature.</p>
         </section>
     </main>
     <footer class="bg-gray-800 text-white py-6">

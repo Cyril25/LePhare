@@ -8,44 +8,40 @@
 </head>
 <body class="bg-gray-100 text-gray-800">
     <header class="bg-white shadow">
-        <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
-            <h1 class="text-2xl font-bold text-center md:text-left">Le Phare</h1>
-            <nav class="mt-4 md:mt-0">
-                <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 text-center">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Le Phare</h1>
+            <nav>
+                <ul class="flex space-x-4">
                     <li><a href="index.html" class="hover:underline">Accueil</a></li>
                     <li><a href="menu-snack.html" class="hover:underline">Menu Snack</a></li>
                     <li><a href="menu-restaurant.html" class="hover:underline">Menu Restaurant</a></li>
-                    <li><a href="menu-boissons.html" class="hover:underline">Menu Boissons</a></li>
                     <li><a href="infos-pratiques.html" class="hover:underline">Infos Pratiques</a></li>
                     <li><a href="blog.html" class="hover:underline">Blog</a></li>
-                    <li><a href="contact.html" class="hover:underline">Contact</a></li>
+                    <li><a href="contact.html" class="text-blue-500 hover:underline">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main class="container mx-auto px-4 py-8">
-        <section class="text-center">
-            <h2 class="text-4xl font-bold mb-4">Contactez-nous</h2>
-            <p class="text-lg">Pour toute question ou réservation, n'hésitez pas à nous écrire ou à nous appeler.</p>
-        </section>
+        <h2 class="text-4xl font-bold mb-4">Contactez-nous</h2>
+        <form class="bg-white p-6 rounded-lg shadow space-y-4">
+            <div>
+                <label for="name" class="block text-lg font-bold">Nom</label>
+                <input type="text" id="name" name="name" class="w-full border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-blue-200">
+            </div>
+            <div>
+                <label for="email" class="block text-lg font-bold">Email</label>
+                <input type="email" id="email" name="email" class="w-full border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-blue-200">
+            </div>
+            <div>
+                <label for="message" class="block text-lg font-bold">Message</label>
+                <textarea id="message" name="message" rows="4" class="w-full border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-blue-200"></textarea>
+            </div>
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600">Envoyer</button>
+        </form>
         <section class="mt-8">
-            <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-                <div class="mb-4">
-                    <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Nom</label>
-                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Votre nom">
-                </div>
-                <div class="mb-4">
-                    <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
-                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Votre email">
-                </div>
-                <div class="mb-4">
-                    <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Message</label>
-                    <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" placeholder="Votre message"></textarea>
-                </div>
-                <div class="flex items-center justify-between">
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">Envoyer</button>
-                </div>
-            </form>
+            <h3 class="text-2xl font-bold">Réseaux Sociaux</h3>
+            <p>Suivez-nous sur Facebook et Instagram pour rester informé des dernières actualités et événements au Phare.</p>
         </section>
     </main>
     <footer class="bg-gray-800 text-white py-6">
