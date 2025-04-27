@@ -1,0 +1,16 @@
+/* Styles pour les images */
+.img-large {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.img-panoramic {
+    max-height: 600px;
+    object-fit: cover;
+}
+
+/* Styles pour les iframes */
+.iframe-borderless {
+    border: 0;
+}
