@@ -1,0 +1,21 @@
+{
+  "name": "Le Phare de Malbuisson",
+  "short_name": "Le Phare",
+  "description": "Bar lounge face au lac Saint-Point, Malbuisson",
+  "start_url": "/LePhare/",
+  "display": "standalone",
+  "background_color": "#0F2744",
+  "theme_color": "#0F2744",
+  "icons": [
+    {
+      "src": "favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

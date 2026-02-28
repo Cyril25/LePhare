@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cyril25.github.io/LePhare/sitemap.xml

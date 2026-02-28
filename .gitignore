@@ -1,0 +1,18 @@
+# Système
+.DS_Store
+Thumbs.db
+*.log
+
+# Éditeurs
+.vscode/settings.json
+*.swp
+*~
+
+# Images sources non optimisées (committer uniquement les WebP)
+assets/images/src/
+
+# Outils BMAD (gestion de projet — pas du code du site)
+_bmad/
+_bmad-output/
+.claude/
+docs/
