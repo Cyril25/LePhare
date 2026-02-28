@@ -7,9 +7,20 @@ Site vitrine du bar lounge Le Phare de Malbuisson.
 
 ### Ajouter un événement dans l'agenda
 1. Ouvrir `index.html`
-2. Chercher le commentaire `AGENDA`
-3. Copier un bloc `.event-card` et modifier : titre, date, description
-4. Sauvegarder → l'événement apparaît immédiatement en Live Server
+2. Chercher le commentaire `AGENDA` (Ctrl+F → "AGENDA — Copier")
+3. Copier un bloc `<!-- EVENT-CARD -->` … `<!-- /EVENT-CARD -->` complet
+4. Modifier les **4 champs** :
+   - `datetime="2026-07-11"` → date ISO de l'événement
+   - `>Sam 11 Juillet 2026<` → texte lisible de la date
+   - `event-card__title` → nom de l'événement
+   - `event-card__desc` → description (≤ 80 mots)
+5. Mettre à jour le lien WhatsApp : remplacer le texte après `text=` dans le `href` du CTA
+6. Sauvegarder → l'événement apparaît immédiatement dans Live Server
+
+### Supprimer un événement passé
+1. Sélectionner le bloc complet `<!-- EVENT-CARD -->` … `<!-- /EVENT-CARD -->`
+2. Supprimer la sélection
+3. Sauvegarder et déployer
 
 ### Modifier les horaires
 1. Ouvrir `index.html`
@@ -26,9 +37,18 @@ Site vitrine du bar lounge Le Phare de Malbuisson.
 1. Ouvrir le dossier dans VS Code
 2. Clic droit sur `index.html` → "Open with Live Server"
 3. Le navigateur s'ouvre automatiquement avec hot reload
+4. Toute sauvegarde de fichier rafraîchit le navigateur en < 2 secondes
 
 > **Note :** En développement local, `<base href="/LePhare/">` peut affecter les chemins.
 > Si les assets ne chargent pas, tester directement sur GitHub Pages après push.
+
+## Vérifier le rendu mobile
+1. Ouvrir Chrome (ou Edge) avec Live Server actif
+2. Appuyer sur **F12** pour ouvrir les DevTools
+3. Cliquer sur l'icône "Toggle device toolbar" (Ctrl+Shift+M)
+4. Sélectionner **390px** (iPhone 14) ou **360px** (Android) dans la liste
+5. Vérifier : texte lisible, boutons ≥ 44px, pas de débordement horizontal
+6. Tester également à 768px (tablette) et 1024px (desktop)
 
 ## Déployer sur GitHub Pages
 
