@@ -1,9 +1,103 @@
 /* ============================================
    TOKENS CSS — Source de vérité
-   Variables couleurs, typographie, espacements
-   Toutes les autres règles CSS DOIVENT utiliser
-   ces variables — jamais de valeur brute
+   Toutes les règles CSS DOIVENT utiliser ces variables
+   Jamais de valeur brute (#hex, px) hors de ce fichier
    ============================================ */
 
-/* TODO Story 1.2 : Définir toutes les variables CSS */
-/* Palette, typographie, espacements, @font-face */
+/* ── FONTES SELF-HOSTED ──────────────────────── */
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/playfair-display-v36-latin-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/playfair-display-v36-latin-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/playfair-display-v36-latin-italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/inter-v18-latin-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/inter-v18-latin-600semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ── PALETTE GOLDEN HOUR ─────────────────────── */
+
+:root {
+  /* Couleurs principales */
+  --color-sunset-orange: #E8651A;
+  --color-blush-pink:    #F2A59A;
+  --color-deep-violet:   #3D1F5C;
+  --color-liquid-gold:   #D4A843;
+  --color-lake-navy:     #0F2744;
+  --color-white:         #FAFAF8;
+
+  /* Couleurs dérivées */
+  --color-overlay-violet: rgba(61, 31, 92, 0.4); /* deep-violet 40% — overlay héro */
+
+  /* ── TYPOGRAPHIE ─────────────────────────────── */
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'Inter', system-ui, sans-serif;
+
+  /* Tailles — mobile-first avec clamp() */
+  --text-sm:   0.875rem;                       /* 14px fixe */
+  --text-base: 1rem;                           /* 16px fixe */
+  --text-md:   1.125rem;                       /* 18px fixe */
+  --text-lg:   clamp(1.25rem, 2.5vw, 1.5rem); /* 20–24px */
+  --text-xl:   clamp(1.5rem, 3vw, 2rem);      /* 24–32px */
+  --text-h2:   clamp(1.75rem, 3.5vw, 2.5rem); /* 28–40px */
+  --text-h1:   clamp(2rem, 4vw, 3rem);        /* 32–48px */
+  --text-hero: clamp(2.5rem, 6vw, 4.5rem);    /* 40–72px — tagline héro */
+
+  /* ── ESPACEMENTS ─────────────────────────────── */
+
+  --space-xs:  0.5rem;  /*  8px */
+  --space-sm:  1rem;    /* 16px */
+  --space-md:  1.5rem;  /* 24px */
+  --space-lg:  2rem;    /* 32px */
+  --space-xl:  3rem;    /* 48px */
+  --space-2xl: 5rem;    /* 80px */
+
+  /* ── RAYONS ──────────────────────────────────── */
+
+  --radius-card:   12px;
+  --radius-button:  6px;
+  --radius-pill:   50px;
+
+  /* ── TRANSITIONS ─────────────────────────────── */
+
+  --transition-base: 0.3s ease;
+  --transition-fast: 0.15s ease;
+
+  /* ── Z-INDEX ─────────────────────────────────── */
+
+  --z-overlay: 10;
+  --z-fab:     100;
+  --z-nav:     200;
+}
