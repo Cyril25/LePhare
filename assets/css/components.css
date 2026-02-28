@@ -376,7 +376,6 @@
   margin-top: var(--space-xl);
   padding-top: var(--space-lg);
   border-top: 1px solid var(--color-deep-violet);
-  opacity: 0.6;
 }
 
 .histoire__team-photo {
