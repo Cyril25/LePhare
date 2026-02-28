@@ -595,6 +595,144 @@
 }
 
 /* ============================================
+   C5 — CARTE & TERROIR (Story 3.3)
+   Menu cards, catégories, producer cards
+   ============================================ */
+
+.menu {
+  background-color: var(--color-lake-navy);
+  color: var(--color-white);
+}
+
+.menu__title {
+  font-family: var(--font-display);
+  font-size: var(--text-h2);
+  color: var(--color-white);
+  margin: 0 0 var(--space-xs);
+}
+
+.menu__subtitle {
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  color: var(--color-blush-pink);
+  margin: 0 0 var(--space-xl);
+}
+
+.menu__category {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  color: var(--color-liquid-gold);
+  margin: 0 0 var(--space-md);
+  padding-bottom: var(--space-xs);
+  border-bottom: 1px solid rgba(212, 168, 67, 0.3);
+}
+
+.menu__grid {
+  display: grid;
+  gap: var(--space-md);
+  margin: 0 0 var(--space-xl);
+}
+
+.menu-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(212, 168, 67, 0.2);
+  border-radius: var(--radius-card);
+  padding: var(--space-md);
+}
+
+.menu-card__name {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  color: var(--color-white);
+  margin: 0 0 var(--space-xs);
+}
+
+.menu-card__desc {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--color-blush-pink);
+  line-height: 1.6;
+  margin: 0 0 var(--space-xs);
+}
+
+.menu-card__badge {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-lake-navy);
+  background-color: var(--color-liquid-gold);
+  border-radius: var(--radius-pill);
+  padding: 2px var(--space-xs);
+}
+
+.menu-card__producer {
+  display: block;
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-style: italic;
+  color: var(--color-blush-pink);
+}
+
+.menu__producers {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-xl);
+}
+
+.menu__producers-title {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  color: var(--color-liquid-gold);
+  margin: 0 0 var(--space-lg);
+}
+
+.menu__producers-grid {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.producer-card {
+  border-left: 3px solid var(--color-liquid-gold);
+  padding: var(--space-sm) var(--space-md);
+}
+
+.producer-card__name {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  color: var(--color-white);
+  margin: 0 0 var(--space-xs);
+}
+
+.producer-card__location {
+  display: block;
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-liquid-gold);
+  margin: 0 0 var(--space-xs);
+}
+
+.producer-card__desc {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--color-blush-pink);
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (min-width: 600px) {
+  .menu__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .menu__producers-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ============================================
    C8 — FOOTER
    Contenu complet (horaires, adresse, liens) ajouté Story 3.2
    ============================================ */
