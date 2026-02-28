@@ -268,6 +268,71 @@
 }
 
 /* ============================================
+   C4 — GALERIE PHOTOS
+   Grille CSS pure — 2 colonnes mobile, 3 desktop, 4 large
+   Aucun carousel — lazy loading
+   ============================================ */
+
+.gallery {
+  background-color: var(--color-lake-navy);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.gallery__title {
+  font-family: var(--font-display);
+  font-size: var(--text-h2);
+  color: var(--color-white);
+  margin: 0 0 var(--space-xs);
+}
+
+.gallery__subtitle {
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  color: var(--color-blush-pink);
+  margin: 0 0 var(--space-lg);
+}
+
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-xs);
+}
+
+.gallery__item {
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--radius-card);
+  background-color: var(--color-deep-violet);
+  aspect-ratio: 3 / 2;
+}
+
+.gallery__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: var(--transition-base);
+}
+
+.gallery__item img:hover {
+  transform: scale(1.03);
+}
+
+@media (min-width: 768px) {
+  .gallery__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-sm);
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ============================================
    C-NEWSLETTER — Phase 1 Teaser
    Section capture email + lien Instagram
    ============================================ */
