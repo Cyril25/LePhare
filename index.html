@@ -447,7 +447,114 @@
     <section class="privatisation" id="privatisation" aria-labelledby="privatisation-title">
       <div class="container">
         <h2 class="privatisation__title" id="privatisation-title">Privatisation</h2>
-        <!-- Formulaire qualifié ajouté en Story 5.1 -->
+        <p class="privatisation__subtitle">Réservez Le Phare pour votre événement privé</p>
+        <p class="privatisation__desc">Anniversaires, dîners d'affaires, mariages, séminaires — la terrasse panoramique du Phare face au lac Saint-Point est le cadre idéal pour rendre votre événement inoubliable. Remplissez ce formulaire et nous vous répondrons dans les 24h.</p>
+
+        <div class="privatisation__layout">
+          <form
+            id="form-privatisation"
+            class="form-privatisation"
+            novalidate
+            aria-label="Formulaire de demande de privatisation"
+          >
+            <!-- Champs cachés Web3Forms -->
+            <input type="hidden" name="access_key" value="adbca143-3278-4f86-a2d0-9402df495a32">
+            <input type="hidden" name="subject" value="Demande de privatisation — Le Phare">
+            <input type="hidden" name="redirect" value="false">
+            <input type="hidden" name="from_name" value="Le Phare de Malbuisson">
+
+            <div class="form-privatisation__row">
+              <div class="form-privatisation__field">
+                <label class="form-privatisation__label" for="prenom-nom">Prénom & Nom</label>
+                <input
+                  class="form-privatisation__input"
+                  id="prenom-nom"
+                  type="text"
+                  name="prenom_nom"
+                  required
+                  autocomplete="name"
+                  placeholder="Marie Dupont"
+                >
+              </div>
+              <div class="form-privatisation__field">
+                <label class="form-privatisation__label" for="email">Email</label>
+                <input
+                  class="form-privatisation__input"
+                  id="email"
+                  type="email"
+                  name="email"
+                  required
+                  autocomplete="email"
+                  placeholder="marie@exemple.fr"
+                >
+              </div>
+            </div>
+
+            <div class="form-privatisation__row">
+              <div class="form-privatisation__field">
+                <label class="form-privatisation__label" for="occasion">Type d'occasion</label>
+                <select class="form-privatisation__input form-privatisation__select" id="occasion" name="occasion" required>
+                  <option value="" disabled selected>Choisir une occasion</option>
+                  <option value="anniversaire">Anniversaire</option>
+                  <option value="diner-affaires">Dîner d'affaires</option>
+                  <option value="enterrement-vie">Enterrement de vie</option>
+                  <option value="mariage">Mariage / Réception</option>
+                  <option value="seminaire">Séminaire d'équipe</option>
+                  <option value="autre">Autre</option>
+                </select>
+              </div>
+              <div class="form-privatisation__field">
+                <label class="form-privatisation__label" for="nb-personnes">Nombre de personnes</label>
+                <input
+                  class="form-privatisation__input"
+                  id="nb-personnes"
+                  type="number"
+                  name="nb_personnes"
+                  min="10"
+                  max="200"
+                  required
+                  placeholder="Ex : 30"
+                >
+              </div>
+            </div>
+
+            <div class="form-privatisation__field">
+              <label class="form-privatisation__label" for="date-souhaitee">Date souhaitée</label>
+              <input
+                class="form-privatisation__input"
+                id="date-souhaitee"
+                type="date"
+                name="date_souhaitee"
+                required
+              >
+            </div>
+
+            <div class="form-privatisation__field">
+              <label class="form-privatisation__label" for="message">Message (optionnel)</label>
+              <textarea
+                class="form-privatisation__input form-privatisation__textarea"
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Décrivez votre événement, vos souhaits particuliers..."
+              ></textarea>
+            </div>
+
+            <div id="form-confirmation" class="form-privatisation__confirmation" hidden aria-live="polite">
+              <p>Merci ! Votre demande a bien été envoyée. Nous vous répondrons dans les 24h.</p>
+            </div>
+
+            <div id="form-error" class="form-privatisation__error" hidden aria-live="polite">
+              <p>Une erreur est survenue. Veuillez réessayer ou nous contacter par WhatsApp.</p>
+            </div>
+
+            <button
+              class="form-privatisation__btn"
+              id="form-submit"
+              type="submit"
+            >Envoyer ma demande</button>
+          </form>
+        </div>
       </div>
     </section>
     <!-- /PRIVATISATION -->

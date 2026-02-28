@@ -733,6 +733,159 @@
 }
 
 /* ============================================
+   C7 — PRIVATISATION & FORMULAIRE (Story 5.1)
+   Formulaire qualifié Web3Forms
+   ============================================ */
+
+.privatisation {
+  background-color: var(--color-white);
+  color: var(--color-lake-navy);
+}
+
+.privatisation__title {
+  font-family: var(--font-display);
+  font-size: var(--text-h2);
+  color: var(--color-deep-violet);
+  margin: 0 0 var(--space-xs);
+}
+
+.privatisation__subtitle {
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  color: var(--color-sunset-orange);
+  font-weight: 600;
+  margin: 0 0 var(--space-sm);
+}
+
+.privatisation__desc {
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  color: var(--color-lake-navy);
+  line-height: 1.7;
+  margin: 0 0 var(--space-xl);
+  max-width: 640px;
+}
+
+.form-privatisation {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.form-privatisation__row {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.form-privatisation__field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.form-privatisation__label {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-lake-navy);
+}
+
+.form-privatisation__input {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--color-lake-navy);
+  background-color: var(--color-white);
+  border: 2px solid rgba(15, 39, 68, 0.2);
+  border-radius: var(--radius-button);
+  padding: var(--space-sm) var(--space-md);
+  min-height: 44px;
+  transition: var(--transition-fast);
+  width: 100%;
+}
+
+.form-privatisation__input:focus {
+  outline: none;
+  border-color: var(--color-deep-violet);
+}
+
+.form-privatisation__select {
+  appearance: none;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%230F2744' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right var(--space-md) center;
+  padding-right: var(--space-xl);
+}
+
+.form-privatisation__textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-privatisation__confirmation {
+  background-color: var(--color-liquid-gold);
+  color: var(--color-lake-navy);
+  padding: var(--space-md);
+  border-radius: var(--radius-card);
+  font-family: var(--font-body);
+  font-weight: 600;
+}
+
+.form-privatisation__confirmation p {
+  margin: 0;
+}
+
+.form-privatisation__error {
+  background-color: var(--color-sunset-orange);
+  color: var(--color-white);
+  padding: var(--space-md);
+  border-radius: var(--radius-card);
+  font-family: var(--font-body);
+  font-weight: 600;
+}
+
+.form-privatisation__error p {
+  margin: 0;
+}
+
+.form-privatisation__btn {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-white);
+  background-color: var(--color-deep-violet);
+  border: none;
+  border-radius: var(--radius-button);
+  padding: var(--space-sm) var(--space-xl);
+  min-height: 44px;
+  cursor: pointer;
+  transition: var(--transition-base);
+  align-self: flex-start;
+}
+
+.form-privatisation__btn:hover,
+.form-privatisation__btn:focus {
+  background-color: var(--color-lake-navy);
+}
+
+.form-privatisation__btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+@media (min-width: 600px) {
+  .form-privatisation__row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .privatisation__layout {
+    max-width: 720px;
+  }
+}
+
+/* ============================================
    C6 — AGENDA ÉVÉNEMENTS (Story 4.1)
    Event cards format affiche
    ============================================ */
