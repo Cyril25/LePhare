@@ -333,6 +333,137 @@
 }
 
 /* ============================================
+   SECTION HISTOIRE — Le Lieu (Story 3.1)
+   Texte narratif, équipe fondatrice, occasions
+   ============================================ */
+
+.histoire {
+  background-color: var(--color-white);
+  color: var(--color-lake-navy);
+}
+
+.histoire__title {
+  font-family: var(--font-display);
+  font-size: var(--text-h2);
+  color: var(--color-deep-violet);
+  margin: 0 0 var(--space-xs);
+}
+
+.histoire__subtitle {
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  color: var(--color-sunset-orange);
+  font-weight: 600;
+  margin: 0 0 var(--space-xl);
+}
+
+.histoire__body {
+  display: grid;
+  gap: var(--space-xl);
+  margin: 0 0 var(--space-xl);
+}
+
+.histoire__narrative p {
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  line-height: 1.8;
+  color: var(--color-lake-navy);
+  margin: 0 0 var(--space-sm);
+}
+
+.histoire__team-photo {
+  margin: 0;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  background-color: var(--color-deep-violet);
+  aspect-ratio: 4 / 3;
+}
+
+.histoire__team-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.histoire__team-info {
+  margin-top: var(--space-md);
+}
+
+.histoire__team-title {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  color: var(--color-deep-violet);
+  margin: 0 0 var(--space-sm);
+}
+
+.histoire__persons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.histoire__person {
+  display: flex;
+  flex-direction: column;
+}
+
+.histoire__person-name {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--color-deep-violet);
+}
+
+.histoire__person-role {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--color-sunset-orange);
+  font-weight: 600;
+}
+
+.histoire__occasions {
+  padding-top: var(--space-xl);
+}
+
+.histoire__occasions-title {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  color: var(--color-deep-violet);
+  margin: 0 0 var(--space-md);
+}
+
+.histoire__occasions-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.histoire__occasion-tag {
+  padding: var(--space-xs) var(--space-sm);
+  background-color: var(--color-deep-violet);
+  color: var(--color-white);
+  border-radius: var(--radius-pill);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .histoire__body {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  .histoire__team-info {
+    margin-top: 0;
+  }
+}
+
+/* ============================================
    C-NEWSLETTER — Phase 1 Teaser
    Section capture email + lien Instagram
    ============================================ */
