@@ -358,8 +358,6 @@
 }
 
 .histoire__body {
-  display: grid;
-  gap: var(--space-xl);
   margin: 0 0 var(--space-xl);
 }
 
@@ -371,12 +369,24 @@
   margin: 0 0 var(--space-sm);
 }
 
+.histoire__team {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-top: var(--space-xl);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--color-deep-violet);
+  opacity: 0.6;
+}
+
 .histoire__team-photo {
   margin: 0;
-  border-radius: var(--radius-card);
+  border-radius: 50%;
   overflow: hidden;
   background-color: var(--color-deep-violet);
-  aspect-ratio: 1 / 1;
+  width: var(--space-2xl);
+  height: var(--space-2xl);
+  flex-shrink: 0;
 }
 
 .histoire__team-photo img {
@@ -388,20 +398,13 @@
 }
 
 .histoire__team-info {
-  margin-top: var(--space-md);
-}
-
-.histoire__team-title {
-  font-family: var(--font-display);
-  font-size: var(--text-xl);
-  color: var(--color-deep-violet);
-  margin: 0 0 var(--space-sm);
+  margin-top: 0;
 }
 
 .histoire__persons {
   display: flex;
   flex-direction: column;
-  gap: var(--space-sm);
+  gap: var(--space-xs);
 }
 
 .histoire__person {
@@ -411,16 +414,16 @@
 
 .histoire__person-name {
   font-family: var(--font-display);
-  font-size: var(--text-lg);
-  font-weight: 700;
+  font-size: var(--text-sm);
+  font-weight: 600;
   color: var(--color-deep-violet);
 }
 
 .histoire__person-role {
   font-family: var(--font-body);
   font-size: var(--text-sm);
-  color: var(--color-sunset-orange);
-  font-weight: 600;
+  color: var(--color-lake-navy);
+  font-weight: 400;
 }
 
 .histoire__occasions {
@@ -453,16 +456,6 @@
   font-weight: 600;
 }
 
-@media (min-width: 768px) {
-  .histoire__body {
-    grid-template-columns: 1fr 1fr;
-    align-items: start;
-  }
-
-  .histoire__team-info {
-    margin-top: 0;
-  }
-}
 
 /* ============================================
    C-NEWSLETTER — Phase 1 Teaser
