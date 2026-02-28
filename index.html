@@ -27,14 +27,44 @@
 </head>
 <body>
   <!-- ======================================
-       HERO — Phase 1 Teaser
-       Modifier la tagline et la date d'ouverture ici
+       NAVIGATION — C1
+       Story 2.2 ajoute sticky + menu hamburger JS
        ====================================== -->
+  <nav id="nav-main" class="nav" aria-label="Navigation principale">
+    <div class="container">
+      <a class="nav__logo" href="#hero" aria-label="Le Phare de Malbuisson — Retour en haut">Le Phare</a>
+      <button
+        class="nav__toggle"
+        id="nav-toggle"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+        aria-label="Ouvrir le menu de navigation"
+      >
+        <span class="nav__hamburger-line" aria-hidden="true"></span>
+        <span class="nav__hamburger-line" aria-hidden="true"></span>
+        <span class="nav__hamburger-line" aria-hidden="true"></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu" role="list">
+        <li><a class="nav__link" href="#galerie">Galerie</a></li>
+        <li><a class="nav__link" href="#le-lieu">Le Lieu</a></li>
+        <li><a class="nav__link" href="#carte">Carte</a></li>
+        <li><a class="nav__link" href="#agenda">Agenda</a></li>
+        <li><a class="nav__link" href="#privatisation">Privatisation</a></li>
+        <li><a class="nav__link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- /NAVIGATION -->
+
   <main>
+    <!-- ======================================
+         HERO — Phase 2 (C3)
+         Modifier la tagline ici
+         ====================================== -->
     <section class="hero" id="hero" aria-label="Introduction — Le Phare de Malbuisson">
       <img
         class="hero__img"
-        src="assets/images/phase1-teaser-bg.webp"
+        src="assets/images/hero-coucher-soleil.webp"
         alt="Vue coucher de soleil sur le lac Saint-Point depuis la terrasse du Phare de Malbuisson"
         width="1200"
         height="800"
@@ -44,64 +74,82 @@
       <div class="hero__overlay" aria-hidden="true"></div>
       <div class="hero__content">
         <h1 class="hero__tagline">On se retrouve au Phare</h1>
-        <p class="hero__date">Ouverture été 2026</p>
+        <a class="hero__cta" href="#galerie">Découvrir →</a>
       </div>
     </section>
+    <!-- /HERO -->
+
     <!-- ======================================
-         NEWSLETTER & INSTAGRAM — Phase 1
-         Modifier le texte et le lien Instagram ici
+         GALERIE — C4 (Story 2.4)
          ====================================== -->
-    <section class="newsletter" id="newsletter" aria-labelledby="newsletter-title">
+    <section class="gallery" id="galerie" aria-labelledby="gallery-title">
       <div class="container">
-        <h2 class="newsletter__title" id="newsletter-title">Restez informés</h2>
-        <p class="newsletter__desc">Inscrivez-vous pour recevoir l'annonce de l'ouverture et les premières nouvelles du Phare.</p>
-        <form
-          class="newsletter__form"
-          id="form-newsletter"
-          action="https://api.web3forms.com/submit"
-          method="POST"
-        >
-          <input type="hidden" name="access_key" value="adbca143-3278-4f86-a2d0-9402df495a32">
-          <input type="hidden" name="subject" value="Inscription newsletter — Le Phare">
-          <input type="hidden" name="redirect" value="false">
-          <div class="newsletter__field">
-            <label for="input-newsletter-email" class="newsletter__label">Votre adresse email</label>
-            <div class="newsletter__input-group">
-              <input
-                type="email"
-                id="input-newsletter-email"
-                name="email"
-                class="newsletter__input"
-                placeholder="vous@email.fr"
-                required
-                autocomplete="email"
-              >
-              <button type="submit" class="newsletter__btn">
-                Être informé
-              </button>
-            </div>
-          </div>
-        </form>
-        <div
-          id="newsletter-confirmation"
-          class="newsletter__confirmation"
-          hidden
-          tabindex="-1"
-        >
-          <p>Merci ! Vous serez parmi les premiers informés de l'ouverture du Phare.</p>
-        </div>
-        <a
-          class="newsletter__instagram"
-          href="https://instagram.com/lepharemalbuisson"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Suivre Le Phare sur Instagram →
-        </a>
+        <h2 class="gallery__title" id="gallery-title">Galerie</h2>
+        <!-- Photos ajoutées en Story 2.4 -->
       </div>
     </section>
-    <!-- /NEWSLETTER & INSTAGRAM -->
+    <!-- /GALERIE -->
+
+    <!-- ======================================
+         LE LIEU — Histoire narrative (Story 3.1)
+         Modifier le texte narratif ici
+         ====================================== -->
+    <section class="histoire" id="le-lieu" aria-labelledby="histoire-title">
+      <div class="container">
+        <h2 class="histoire__title" id="histoire-title">Le Lieu</h2>
+        <!-- Contenu narratif et équipe ajoutés en Story 3.1 -->
+      </div>
+    </section>
+    <!-- /LE LIEU -->
+
+    <!-- ======================================
+         CARTE & TERROIR — C5 (Story 3.3)
+         Copier un bloc .menu-card pour ajouter un produit
+         ====================================== -->
+    <section class="menu" id="carte" aria-labelledby="carte-title">
+      <div class="container">
+        <h2 class="menu__title" id="carte-title">Carte & Terroir</h2>
+        <!-- Produits et producteurs ajoutés en Story 3.3 -->
+      </div>
+    </section>
+    <!-- /CARTE & TERROIR -->
+
+    <!-- ======================================
+         AGENDA — C6 (Story 4.1)
+         Copier un bloc .event-card pour ajouter un événement
+         ====================================== -->
+    <section class="agenda" id="agenda" aria-labelledby="agenda-title">
+      <div class="container">
+        <h2 class="agenda__title" id="agenda-title">Agenda</h2>
+        <!-- Événements ajoutés en Story 4.1 -->
+      </div>
+    </section>
+    <!-- /AGENDA -->
+
+    <!-- ======================================
+         PRIVATISATION — C7 (Story 5.1)
+         ====================================== -->
+    <section class="privatisation" id="privatisation" aria-labelledby="privatisation-title">
+      <div class="container">
+        <h2 class="privatisation__title" id="privatisation-title">Privatisation</h2>
+        <!-- Formulaire qualifié ajouté en Story 5.1 -->
+      </div>
+    </section>
+    <!-- /PRIVATISATION -->
+
   </main>
-  <!-- /HERO -->
+
+  <!-- ======================================
+       FOOTER & INFOS PRATIQUES — C8 (Story 3.2)
+       Modifier les horaires et l'adresse ici
+       ====================================== -->
+  <footer class="footer" id="contact" aria-label="Informations pratiques et contact">
+    <div class="container">
+      <p class="footer__name">Le Phare de Malbuisson</p>
+      <!-- Horaires, adresse, liens Instagram et légaux ajoutés en Story 3.2 -->
+    </div>
+  </footer>
+  <!-- /FOOTER -->
+
 </body>
 </html>
