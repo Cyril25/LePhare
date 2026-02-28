@@ -47,6 +47,60 @@
         <p class="hero__date">Ouverture été 2026</p>
       </div>
     </section>
+    <!-- ======================================
+         NEWSLETTER & INSTAGRAM — Phase 1
+         Modifier le texte et le lien Instagram ici
+         ====================================== -->
+    <section class="newsletter" id="newsletter" aria-labelledby="newsletter-title">
+      <div class="container">
+        <h2 class="newsletter__title" id="newsletter-title">Restez informés</h2>
+        <p class="newsletter__desc">Inscrivez-vous pour recevoir l'annonce de l'ouverture et les premières nouvelles du Phare.</p>
+        <form
+          class="newsletter__form"
+          id="form-newsletter"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
+          <input type="hidden" name="access_key" value="adbca143-3278-4f86-a2d0-9402df495a32">
+          <input type="hidden" name="subject" value="Inscription newsletter — Le Phare">
+          <input type="hidden" name="redirect" value="false">
+          <div class="newsletter__field">
+            <label for="input-newsletter-email" class="newsletter__label">Votre adresse email</label>
+            <div class="newsletter__input-group">
+              <input
+                type="email"
+                id="input-newsletter-email"
+                name="email"
+                class="newsletter__input"
+                placeholder="vous@email.fr"
+                required
+                autocomplete="email"
+              >
+              <button type="submit" class="newsletter__btn">
+                Être informé
+              </button>
+            </div>
+          </div>
+        </form>
+        <div
+          id="newsletter-confirmation"
+          class="newsletter__confirmation"
+          hidden
+          tabindex="-1"
+        >
+          <p>Merci ! Vous serez parmi les premiers informés de l'ouverture du Phare.</p>
+        </div>
+        <a
+          class="newsletter__instagram"
+          href="https://instagram.com/lepharemalbuisson"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Suivre Le Phare sur Instagram →
+        </a>
+      </div>
+    </section>
+    <!-- /NEWSLETTER & INSTAGRAM -->
   </main>
   <!-- /HERO -->
 </body>

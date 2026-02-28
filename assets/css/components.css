@@ -91,3 +91,134 @@
     min-height: 600px;
   }
 }
+
+/* ============================================
+   C-NEWSLETTER — Phase 1 Teaser
+   Section capture email + lien Instagram
+   ============================================ */
+
+.newsletter {
+  background-color: var(--color-lake-navy);
+  color: var(--color-white);
+  text-align: center;
+  /* padding: var(--space-xl) 0 hérité de layout.css section */
+}
+
+.newsletter__title {
+  font-family: var(--font-display);
+  font-size: var(--text-h2);
+  color: var(--color-white);
+  margin: 0 0 var(--space-sm);
+}
+
+.newsletter__desc {
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  color: var(--color-blush-pink);
+  margin: 0 0 var(--space-lg);
+}
+
+.newsletter__field {
+  margin: 0 0 var(--space-md);
+}
+
+.newsletter__label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--color-white);
+  margin: 0 0 var(--space-xs);
+  text-align: left;
+}
+
+.newsletter__input-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.newsletter__input {
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--color-lake-navy);
+  background-color: var(--color-white);
+  border: 2px solid transparent;
+  border-radius: var(--radius-button);
+  min-height: 44px;
+}
+
+.newsletter__input:focus {
+  outline: none;
+  border-color: var(--color-liquid-gold);
+}
+
+.newsletter__btn {
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-lake-navy);
+  background-color: var(--color-liquid-gold);
+  border: none;
+  border-radius: var(--radius-button);
+  cursor: pointer;
+  min-height: 44px;
+  transition: var(--transition-base);
+}
+
+.newsletter__btn:hover {
+  background-color: var(--color-sunset-orange);
+  color: var(--color-white);
+}
+
+.newsletter__btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.newsletter__confirmation {
+  background-color: var(--color-liquid-gold);
+  color: var(--color-lake-navy);
+  padding: var(--space-md);
+  border-radius: var(--radius-card);
+  margin: 0 0 var(--space-lg);
+  font-weight: 600;
+}
+
+.newsletter__instagram {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-top: var(--space-lg);
+  padding: var(--space-sm) var(--space-lg);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-white);
+  border: 2px solid var(--color-white);
+  border-radius: var(--radius-pill);
+  text-decoration: none;
+  transition: var(--transition-base);
+  min-height: 44px;
+}
+
+.newsletter__instagram:hover,
+.newsletter__instagram:focus {
+  background-color: var(--color-white);
+  color: var(--color-lake-navy);
+  text-decoration: none;
+}
+
+@media (min-width: 600px) {
+  .newsletter__input-group {
+    flex-direction: row;
+  }
+
+  .newsletter__btn {
+    width: auto;
+    flex-shrink: 0;
+  }
+}
