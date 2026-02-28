@@ -733,6 +733,118 @@
 }
 
 /* ============================================
+   C6 — AGENDA ÉVÉNEMENTS (Story 4.1)
+   Event cards format affiche
+   ============================================ */
+
+.agenda {
+  background-color: var(--color-deep-violet);
+  color: var(--color-white);
+}
+
+.agenda__title {
+  font-family: var(--font-display);
+  font-size: var(--text-h2);
+  color: var(--color-white);
+  margin: 0 0 var(--space-xs);
+}
+
+.agenda__subtitle {
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  color: var(--color-blush-pink);
+  margin: 0 0 var(--space-xl);
+}
+
+.agenda__grid {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.event-card {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(212, 168, 67, 0.3);
+  border-radius: var(--radius-card);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.event-card__header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.event-card__date {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--color-liquid-gold);
+  line-height: 1.1;
+}
+
+.event-card__time {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--color-blush-pink);
+  font-weight: 600;
+}
+
+.event-card__title {
+  font-family: var(--font-display);
+  font-size: var(--text-h2);
+  color: var(--color-white);
+  margin: 0;
+  line-height: 1.1;
+}
+
+.event-card__desc {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: rgba(250, 250, 248, 0.8);
+  line-height: 1.7;
+  margin: 0;
+  flex: 1;
+}
+
+.event-card__cta {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-sm) var(--space-md);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-lake-navy);
+  background-color: var(--color-liquid-gold);
+  border-radius: var(--radius-button);
+  text-decoration: none;
+  transition: var(--transition-base);
+  min-height: 44px;
+  align-self: flex-start;
+}
+
+.event-card__cta:hover,
+.event-card__cta:focus {
+  background-color: var(--color-sunset-orange);
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .agenda__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .agenda__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ============================================
    C8 — FOOTER
    Contenu complet (horaires, adresse, liens) ajouté Story 3.2
    ============================================ */
