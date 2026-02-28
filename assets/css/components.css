@@ -123,6 +123,41 @@
   }
 }
 
+/* ============================================
+   C2 — FAB WHATSAPP FLOTTANT
+   HTML pur — aucun JS requis (FR11, FR15)
+   ============================================ */
+
+.fab-whatsapp {
+  position: fixed;
+  bottom: var(--space-lg);
+  right: var(--space-lg);
+  z-index: var(--z-fab);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background-color: #25D366;
+  border-radius: var(--radius-pill);
+  color: var(--color-white);
+  text-decoration: none;
+  transition: var(--transition-base);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.fab-whatsapp__icon {
+  width: 28px;
+  height: 28px;
+}
+
+.fab-whatsapp:hover,
+.fab-whatsapp:focus {
+  background-color: #128C7E;
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
 /* ── @KEYFRAMES ──────────────────────────────── */
 
 @keyframes fadeIn {
