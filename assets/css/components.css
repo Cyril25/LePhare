@@ -312,6 +312,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  cursor: pointer;
   transition: var(--transition-base);
 }
 
@@ -331,6 +332,109 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+/* ============================================
+   LIGHTBOX
+   ============================================ */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background-color: var(--color-overlay-navy);
+  z-index: var(--z-lightbox);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  /* F4: visibility delayed on close — hides only after fade completes */
+  transition: opacity var(--transition-base), visibility 0s var(--duration-base);
+}
+
+.lightbox--open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  /* F4: no delay on open — visibility immediate */
+  transition: opacity var(--transition-base), visibility 0s;
+}
+
+.lightbox__content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.lightbox__img {
+  /* F8: max-width supprimé — déjà contraint par .lightbox__content */
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: var(--radius-card);
+  display: block;
+}
+
+.lightbox__caption {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--color-blush-pink);
+  text-align: center;
+  max-width: 60ch;
+}
+
+.lightbox__close {
+  /* F7: position:absolute — .lightbox est déjà fixed inset:0, évite les bugs de transform */
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  background: none;
+  border: none;
+  color: var(--color-white);
+  font-size: var(--text-xl);
+  cursor: pointer;
+  line-height: 1;
+  padding: var(--space-xs);
+  transition: color var(--transition-fast);
+}
+
+.lightbox__close:hover {
+  color: var(--color-blush-pink);
+}
+
+/* F3: indicateur de focus clavier visible */
+.lightbox__close:focus-visible,
+.lightbox__nav:focus-visible {
+  outline: 2px solid var(--color-liquid-gold);
+  outline-offset: var(--space-xs);
+  border-radius: var(--radius-button);
+}
+
+.lightbox__nav {
+  /* F7: position:absolute — même raison que .lightbox__close */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--color-white);
+  font-size: var(--text-hero);
+  cursor: pointer;
+  line-height: 1;
+  padding: var(--space-xs) var(--space-sm);
+  transition: color var(--transition-fast);
+}
+
+.lightbox__nav:hover {
+  color: var(--color-liquid-gold);
+}
+
+.lightbox__nav--prev { left: var(--space-xs); }
+.lightbox__nav--next { right: var(--space-xs); }
 
 /* ============================================
    SECTION HISTOIRE — Le Lieu (Story 3.1)

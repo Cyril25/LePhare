@@ -86,6 +86,7 @@
   <!-- JS — defer pour ne pas bloquer le rendu -->
   <script defer src="assets/js/nav.js"></script>
   <script defer src="assets/js/form.js"></script>
+  <script defer src="assets/js/lightbox.js"></script>
 </head>
 <body>
   <!-- ======================================
@@ -696,6 +697,18 @@
     </div>
   </footer>
   <!-- /FOOTER -->
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image agrandie" tabindex="-1">
+    <button class="lightbox__close" id="lightbox-close" aria-label="Fermer la lightbox">✕</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightbox-prev" aria-label="Image précédente">‹</button>
+    <button class="lightbox__nav lightbox__nav--next" id="lightbox-next" aria-label="Image suivante">›</button>
+    <figure class="lightbox__content">
+      <img class="lightbox__img" id="lightbox-img" src="data:," alt="">
+      <figcaption class="lightbox__caption" id="lightbox-caption"></figcaption>
+    </figure>
+  </div>
+  <!-- /LIGHTBOX -->
 
 </body>
 </html>

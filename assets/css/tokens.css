@@ -59,6 +59,7 @@
 
   /* Couleurs dérivées */
   --color-overlay-violet: rgba(61, 31, 92, 0.4); /* deep-violet 40% — overlay héro */
+  --color-overlay-navy: rgba(15, 39, 68, 0.92); /* lake-navy 92% — overlay lightbox */
 
   /* ── TYPOGRAPHIE ─────────────────────────────── */
 
@@ -94,10 +95,12 @@
 
   --transition-base: 0.3s ease;
   --transition-fast: 0.15s ease;
+  --duration-base:   0.3s;      /* durée seule — pour délais de transition */
 
   /* ── Z-INDEX ─────────────────────────────────── */
 
-  --z-overlay: 10;
+  --z-overlay:  10;
   --z-fab:     100;
   --z-nav:     200;
+  --z-lightbox: 300;
 }
