@@ -27,10 +27,13 @@ function initLightbox() {
     lightboxImg.src = img.src;
     lightboxImg.alt = img.alt;
     lightboxCaption.textContent = img.alt;
-    previousOverflow = document.body.style.overflow; // F5
-    document.body.style.overflow = 'hidden';
-    lightbox.classList.add('lightbox--open');
-    closeBtn.focus(); // F1: focus sur le premier élément interactif
+    // F5: sauvegarder overflow uniquement à la première ouverture, pas à la navigation
+    if (!lightbox.classList.contains('lightbox--open')) {
+      previousOverflow = document.body.style.overflow;
+      document.body.style.overflow = 'hidden';
+      lightbox.classList.add('lightbox--open');
+      closeBtn.focus(); // F1: focus sur le premier élément interactif
+    }
   }
 
   function close() {
